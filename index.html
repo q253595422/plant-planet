@@ -41,7 +41,7 @@ var plantCard=document.getElementById("plantCard");
 var plantsGrid=document.getElementById("plantsGrid");
 var width,height,centerX,centerY,globeRadius,rotation=0,isAutoRotating=true;
 var earthImg=new Image();
-earthImg.src="/tmp/earth.jpg";
+earthImg.src="earth.jpg";
 earthImg.onload=function(){animate();};
 function resize(){var s=Math.min(window.innerWidth,window.innerHeight)*0.65;width=canvas.width=window.innerWidth;height=canvas.height=window.innerHeight;centerX=width/2;centerY=height/2;globeRadius=s/2;}
 resize();window.addEventListener("resize",resize);
